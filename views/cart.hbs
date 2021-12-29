@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css\cart.css">
+</head>
+<body>
+<a href="/" style="color:yellow">Quay về trang chính</a>
+<h2 style="color:red">Thông tin và thanh toán</h2>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form>
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Thông tin và đặt hàng</h3>
+            <label for="fname"><i class="fa fa-user"></i>Họ và tên</label>
+            <input type="text" id="fname" name="firstname" placeholder="Trần Văn A">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+            <input type="text" id="adr" name="address" placeholder="8 Tôn Thất Thuyết">
+            <label for="city"><i class="fa fa-institution"></i> Thành phố</label>
+            <input type="text" id="city" name="city" placeholder="Hà Nội">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Bang</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" maxlength="5">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Phương thức thanh toán</h3>
+            <label for="fname">Thanh toán bằng thẻ</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Tên trên thẻ</label>
+            <input type="text" id="cname" name="cardname" placeholder="Tran Van A">
+            <label for="ccnum">Số thẻ</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" maxlength="16">
+            <label for="expmonth">Tháng</label>
+            
+            <select id='expmonth'name="expmonth">
+                    <option selected value=''>Chọn tháng</option>
+                    <option value='1'>Tháng 1</option>
+                    <option value='2'>Tháng 2</option>
+                    <option value='3'>Tháng 3</option>
+                    <option value='4'>Tháng 4</option>
+                    <option value='5'>Tháng 5</option>
+                    <option value='6'>Tháng 6</option>
+                    <option value='7'>Tháng 7</option>
+                    <option value='8'>Tháng 8</option>
+                    <option value='9'>Tháng 9</option>
+                    <option value='10'>Tháng 10</option>
+                    <option value='11'>Tháng 11</option>
+                    <option value='12'>Tháng 12</option>
+                    </select> 
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Năm</label>
+                
+                <select name="birth-year">
+                     <option selected value="2018">Chọn năm</option>
+                    <option value="2018">2020</option>
+                    <option value="2017">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+
+              </div>
+             
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Địa chỉ giao hàng giống như trên địa chỉ
+        </label>
+        
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    </div>
+  </div>
+  <input type="submit" value="Tiếp tục thanh toán" class="btn">
+</div>
+
+</body>
+</html>
