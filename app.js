@@ -91,15 +91,20 @@ app.post('/addnew', async(req, res) => {
     res.redirect('/product')
 })
 
-app.get('/cart', (req, res) => {
-    res.render('addnew')
+app.get('/cart', async(req, res) => {
+    res.render('cart')
+    const name = req.body.txt.firstname
+
 })
+
 app.get('/delete', async(req, res) => {
     const id = req.query.id
     const dbo = await getDatabase()
     await dbo.collection("Products").deleteOne({ _id: ObjectId(id) })
     res.redirect('/product')
 })
+
+
 
 app.post('/edit', async(req, res) => {
     const nameInput = req.body.txtName
